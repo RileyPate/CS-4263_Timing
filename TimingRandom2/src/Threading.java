@@ -31,7 +31,7 @@ public class Threading
 	public static String[] sites = { 
 	"http://35.192.236.37:8080/number.jsp",
 	"http://35.222.240.90/",
-	"next"};
+	"http://rng-python.appspot.com"};
     public static void main(String[] args) 
     { 
         int n = 8; // Number of threads 
