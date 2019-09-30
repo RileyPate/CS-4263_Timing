@@ -39,12 +39,14 @@ public class Threading
 			"http://34.97.25.195",
 			"http://34.97.51.216:8080/number.jsp",
 			"http://rng-python-asiane2.appspot.com",
-			"https://number-254315.appspot.com/hello"};
+			"https://number-254315.appspot.com/hello",
+			"https://agile-genius-254017.appspot.com"};
 	public static String[] info = {
 			"asia-northeast_2a_VM_Python@",
 			"asia-northeast2_a_VM_Java@",
 			"asia-northeast2_a_app_Python@",
-			"asia-northeast2_a_App_Java@"
+			"asia-northeast2_a_App_Java@",
+			"us-centra1_a_app_Python@"
 	};
 	
 	
