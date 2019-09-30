@@ -16,7 +16,7 @@ class TimingThread extends Thread
 			long ending = System.nanoTime();
 			double total =(double)(ending - beginning)/1000000000;
 			for(Element i: elements) {
-				System.out.println(info +string +" "+total+ " "+ i.text());
+				System.out.println(info +string +" "+total+ "s "+ i.text());
 			}
 			
 		}
@@ -29,7 +29,7 @@ class TimingThread extends Thread
 // Main Class 
 public class Threading 
 { 
-	/* OLD IP ADDRESS FOR US REGION
+	/* OLD IP ADDRESS FOR US CENTRAL REGION
 	public static String[] sites = { 
 	"http://35.192.236.37:8080/number.jsp",
 	"http://35.222.240.90/",
@@ -38,11 +38,13 @@ public class Threading
 	public static String[] sites = { 
 			"http://34.97.25.195",
 			"http://34.97.51.216:8080/number.jsp",
-			"http://rng-python-asiane2.appspot.com"};
+			"http://rng-python-asiane2.appspot.com",
+			"https://number-254315.appspot.com/hello"};
 	public static String[] info = {
 			"asia-northeast_2a_VM_Python@",
 			"asia-northeast2_a_VM_Java@",
-			"asia-northeast2_a_app_Python@"
+			"asia-northeast2_a_app_Python@",
+			"asia-northeast2_a_App_Java@"
 	};
 	
 	
@@ -52,7 +54,7 @@ public class Threading
         for (int i=0; i<sites.length; i++) 
         { 
             TimingThread object = new TimingThread(); 
-            object.start(info[i].sites[i]); 
+            object.start(info[i], sites[i]); 
         } 
     } 
 }
