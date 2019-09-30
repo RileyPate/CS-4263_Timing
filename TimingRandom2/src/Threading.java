@@ -50,7 +50,7 @@ public class Threading
 	
     public static void main(String[] args) 
     { 
-        int n = 8; // Number of threads 
+        
         for (int i=0; i<sites.length; i++) 
         { 
             TimingThread object = new TimingThread(); 
